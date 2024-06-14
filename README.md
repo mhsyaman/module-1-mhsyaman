@@ -8,5 +8,5 @@
 | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | ![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white&style=for-the-badge)             | [muhammadsyaman50@gmail.com](mailto:muhammadsyaman50@gmail.com) |
 | ![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white&style=for-the-badge) | [mhsyaman](https://instagram.com/mhsyaman)                      |
-| ![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge)    | [mhsyaman](https://linkedin.com/mhsyaman)                       |
+| ![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge)    | [mhsyaman](https://linkedin.com/in/mhsyaman)                    |
 | ![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white&style=for-the-badge)    | [mhsyaman](https://t.me/mhsyaman)                               |
