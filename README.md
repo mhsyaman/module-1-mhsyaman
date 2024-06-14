@@ -2,7 +2,7 @@
 
 ![HI!](https://readme-typing-svg.demolab.com?font=Fira+Code&size=80&pause=1000&color=08D750&vCenter=true&random=false&width=700&height=80&lines=Hi+I'm+Syaman!)
 
-![syaman](assets/my-profile.jpeg)
+![syaman](assets/profile.jpg)
 
 | Platform                                                                                                       | Username                                                        |
 | -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
