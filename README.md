@@ -47,3 +47,12 @@ Here is the HTML structure used to build the Shoe Store website. This site provi
 #### Overview
 
 This site is designed to provide easily accessible information about the products and services of the Shoe Store, as well as facilitate communication between visitors and the store owner through the contact form.
+
+---
+
+<div align="center">
+
+<img height="120" alt="Thanks for visiting me" width="100%" src="https://raw.githubusercontent.com/BrunnerLivio/brunnerlivio/master/images/marquee.svg" />
+<br />
+
+</p>
