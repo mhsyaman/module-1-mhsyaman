@@ -13,9 +13,9 @@
 
 ---
 
-### HTML Documentation for Shoe Stores
+### HTML Documentation for Adelas
 
-Here is the HTML structure used to build the Shoe Store website. This site provides information about products and promotions, as well as a contact form for visitors.
+Here is the HTML structure used to build the Adelas is Shoe Store websites. This site provides information about products and promotions, as well as a contact form for visitors.
 
 #### Page Structure
 
