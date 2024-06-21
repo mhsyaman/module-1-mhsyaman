@@ -1,0 +1,281 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 20px; /* Padding yang lebih besar untuk desktop */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px; /* Ukuran font yang lebih besar untuk judul */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px; /* Margin yang lebih besar antar item */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px; /* Padding yang lebih besar untuk link */
+  display: block;
+  font-size: 18px; /* Ukuran font yang lebih besar untuk navigasi */
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px; /* Lebar yang lebih besar untuk sidebar */
+  background-color: #f44336; /* Warna merah untuk menarik perhatian */
+  color: white;
+  padding: 30px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1001; /* Pastikan lebih tinggi dari elemen lain */
+}
+
+aside h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+aside p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Styling untuk section produk */
+#products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.product-item {
+  width: 30%;
+  margin: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  background-color: white;
+  text-align: center; /* Tengahkan semua teks */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
+  border-radius: 8px; /* Border radius untuk tampilan yang lebih lembut */
+  display: flex; /* Added to enable flex-direction */
+  flex-direction: column; /* Mengatur item produk secara vertikal */
+}
+
+.product-item:hover {
+  transform: translateY(-5px); /* Efek hover yang mengangkat item */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih dinamis saat hover */
+}
+
+.product-item img {
+  width: 100%; /* Buat gambar memenuhi lebar kontainer */
+  height: auto; /* Pertahankan rasio aspek gambar */
+  border-radius: 5px; /* Lengkungan pada gambar */
+}
+
+.product-item h4 {
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Animasi untuk memuat item produk */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-item {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+#products h3 {
+  font-size: 24px; /* Ukuran font diperbesar */
+  font-weight: bold; /* Membuat teks lebih tebal */
+  color: #333; /* Warna teks disesuaikan */
+  margin-bottom: 10px; /* Memberikan jarak di bawah teks */
+  text-align: center; /* Teks rata tengah untuk keselarasan */
+}
+
+#home {
+  background-color: #f0f8ff; /* Warna latar belakang biru muda */
+  padding: 20px; /* Padding untuk membuat teks tidak terlalu dekat dengan tepi */
+  border-radius: 8px; /* Tepi yang melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk menambah kedalaman */
+  margin: 20px; /* Margin untuk memberi ruang sekitar section */
+}
+
+#home h2 {
+  color: #333; /* Warna teks gelap untuk judul */
+  font-size: 24px; /* Ukuran font yang lebih besar untuk judul */
+  margin-bottom: 10px; /* Jarak antara judul dan paragraf */
+}
+
+#home p {
+  color: #666; /* Warna teks abu-abu untuk paragraf */
+  font-size: 16px; /* Ukuran font untuk paragraf */
+  line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Styling untuk section form */
+form {
+  background-color: #fff; /* Warna latar belakang */
+  padding: 20px; /* Padding di dalam form */
+  border-radius: 8px; /* Border radius untuk tampilan yang lebih lembut */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+  width: 80%; /* Lebar form */
+  margin: 20px auto; /* Margin untuk rata tengah */
+  text-align: left; /* Teks rata kiri */
+}
+
+#form h3 {
+  font-size: 24px; /* Atur ukuran font lebih besar */
+  text-align: center; /* Teks dibuat rata tengah */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Lebar input sesuai dengan kontainer */
+  padding: 10px; /* Padding di dalam input */
+  margin-top: 10px; /* Margin di atas input */
+  margin-bottom: 20px; /* Margin di bawah input */
+  border: 1px solid #ccc; /* Border input */
+  border-radius: 4px; /* Border radius input */
+}
+
+button {
+  background-color: #4caf50; /* Warna latar belakang hijau */
+  color: white; /* Warna teks putih */
+  padding: 15px 32px; /* Padding membuat tombol lebih besar */
+  text-align: center; /* Teks di tengah */
+  text-decoration: none; /* Tidak ada garis bawah */
+  display: inline-block; /* Tipe display */
+  font-size: 16px; /* Ukuran font */
+  margin: 4px 2px; /* Margin sekitar tombol */
+  cursor: pointer; /* Cursor berbentuk pointer */
+  border: none; /* Tidak ada border */
+  border-radius: 8px; /* Border bulat */
+  transition: background-color 0.3s; /* Transisi untuk hover */
+}
+
+button:hover {
+  background-color: #45a049; /* Warna latar belakang saat di-hover */
+}
+
+/* Responsif untuk max-width 800px */
+@media (max-width: 800px) {
+  form {
+    width: 90%; /* Lebar form lebih besar untuk layar yang lebih kecil */
+  }
+}
+
+/* Responsif untuk max-width 600px */
+@media (max-width: 600px) {
+  form {
+    width: 100%; /* Lebar form penuh pada layar yang sangat kecil */
+  }
+}
+
+footer {
+  background-color: #333; /* Warna latar belakang gelap */
+  color: white; /* Warna teks putih */
+  padding: 20px 10px; /* Padding atas-bawah dan kiri-kanan */
+  text-align: center; /* Teks rata tengah */
+  position: relative; /* Posisi relatif */
+  bottom: 0; /* Letakkan di bawah halaman */
+  width: 100%; /* Lebar penuh */
+}
+
+/* Styling untuk promo hari ini */
+.promo {
+  background-color: #ff9800; /* Warna latar belakang oranye cerah */
+  color: white; /* Warna teks putih */
+  padding: 20px; /* Padding yang cukup untuk membuat teks tidak terlalu dekat dengan tepi */
+  margin: 20px auto; /* Margin untuk rata tengah */
+  text-align: center; /* Teks rata tengah */
+  border-radius: 10px; /* Tepi yang melengkung */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk menambah kedalaman */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.promo:hover {
+  transform: scale(1.05); /* Efek hover yang memperbesar promo */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bayangan yang lebih dinamis saat hover */
+}
+
+/* Media query untuk layar dengan maksimal lebar 800px */
+@media (max-width: 800px) {
+  .promo {
+    padding: 15px; /* Mengurangi padding dari 20px menjadi 15px */
+  }
+  .promo h2 {
+    font-size: 20px;
+  }
+  .promo p {
+    font-size: 14px;
+  }
+}
+
+/* Media query untuk layar dengan maksimal lebar 600px */
+@media (max-width: 600px) {
+  .promo {
+    padding: 10px; /* Mengurangi padding dari 20px menjadi 10px */
+  }
+  .promo h2 {
+    font-size: 18px;
+  }
+  .promo p {
+    font-size: 12px;
+  }
+}
+
+/* Aturan CSS untuk lebar layar maksimal 800px */
+@media (max-width: 800px) {
+  .product-item {
+    flex-direction: column; /* Mengatur item produk secara vertikal */
+    width: 50%; /* Atur lebar item produk menjadi 50% dari kontainer */
+    margin: 0 auto; /* Tengahkan item produk */
+    padding: 10px; /* Berikan padding */
+  }
+}
+
+/* Aturan CSS untuk lebar layar maksimal 600px */
+@media (max-width: 600px) {
+  .product-item {
+    flex-direction: column; /* Mengatur item produk secara vertikal */
+    width: 100%; /* Mengatur lebar setiap item produk menjadi penuh */
+    margin-bottom: 20px; /* Menambahkan jarak di bawah setiap item produk */
+  }
+}
