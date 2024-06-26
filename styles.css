@@ -46,9 +46,9 @@ nav ul li a:hover {
 aside {
   position: fixed;
   right: 0;
-  top: 80%;
-  transform: translateY(-15%);
-  width: 300px; /* Lebar yang lebih besar untuk sidebar */
+  top: 75%;
+  transform: translateY(-10%);
+  width: 250px; /* Lebar yang lebih besar untuk sidebar */
   background-color: #f44336; /* Warna merah untuk menarik perhatian */
   color: white;
   padding: 30px;
@@ -190,6 +190,12 @@ button {
   transition: background-color 0.3s; /* Transisi untuk hover */
 }
 
+.highlight {
+  color: #03ff8e; /* Warna latar belakang oranye cerah */
+  font-weight: bold; /* Teks berbahaya */
+  font-size: 30px;
+}
+
 button:hover {
   background-color: #45a049; /* Warna latar belakang saat di-hover */
 }
@@ -241,10 +247,13 @@ footer {
     padding: 15px; /* Mengurangi padding dari 20px menjadi 15px */
   }
   .promo h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .promo p {
     font-size: 14px;
+  }
+  .highlight {
+    font-size: 25px;
   }
 }
 
@@ -254,10 +263,13 @@ footer {
     padding: 10px; /* Mengurangi padding dari 20px menjadi 10px */
   }
   .promo h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .promo p {
     font-size: 12px;
+  }
+  .highlight {
+    font-size: 20px;
   }
 }
 
@@ -265,9 +277,9 @@ footer {
 @media (max-width: 800px) {
   .product-item {
     flex-direction: column; /* Mengatur item produk secara vertikal */
-    width: 50%; /* Atur lebar item produk menjadi 50% dari kontainer */
-    margin: 0 auto; /* Tengahkan item produk */
+    width: 100%; /* Atur lebar item produk menjadi 50% dari kontainer */
     padding: 10px; /* Berikan padding */
+    margin-bottom: 20px; /* Menambahkan jarak di bawah setiap item produk */
   }
 }
 
