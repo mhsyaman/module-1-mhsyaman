@@ -46,8 +46,8 @@ nav ul li a:hover {
 aside {
   position: fixed;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 80%;
+  transform: translateY(-15%);
   width: 300px; /* Lebar yang lebih besar untuk sidebar */
   background-color: #f44336; /* Warna merah untuk menarik perhatian */
   color: white;
@@ -151,7 +151,7 @@ aside p {
 /* Styling untuk section form */
 form {
   background-color: #fff; /* Warna latar belakang */
-  padding: 20px; /* Padding di dalam form */
+  padding: 20px 40px 20px 20px; /* Padding di dalam form */
   border-radius: 8px; /* Border radius untuk tampilan yang lebih lembut */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
   width: 80%; /* Lebar form */
@@ -197,14 +197,14 @@ button:hover {
 /* Responsif untuk max-width 800px */
 @media (max-width: 800px) {
   form {
-    width: 90%; /* Lebar form lebih besar untuk layar yang lebih kecil */
+    width: 80%; /* Lebar form lebih besar untuk layar yang lebih kecil */
   }
 }
 
 /* Responsif untuk max-width 600px */
 @media (max-width: 600px) {
   form {
-    width: 100%; /* Lebar form penuh pada layar yang sangat kecil */
+    width: 60%; /* Lebar form penuh pada layar yang sangat kecil */
   }
 }
 
