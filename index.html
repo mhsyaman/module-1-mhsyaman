@@ -6,11 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adelas</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 
 <body>
     <header>
         <h1>Adelas</h1>
+        <nav>
+            <i data-feather="menu" class="hamburger-menu"></i>
+            <ul class="nav-list">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#form">Kontak</a></li>
+            </ul>
+        </nav>
         <nav>
             <ul>
                 <li><a href="#home">Beranda</a></li>
@@ -82,8 +93,12 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Adelas. Semua hak cipta dilindungi.</p>
+        <p>&copy; 2024 Adelas. Semua hak cipta dilindungi.</p>
     </footer>
+
+    <script>
+        feather.replace();
+    </script>
 </body>
 
 </html>
