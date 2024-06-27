@@ -1,6 +1,6 @@
 @font-face {
   font-family: "header";
-  src: url("assets/fonts/Facon.ttf");
+  src: url(../assets/fonts/Facon.ttf);
 }
 
 header {
