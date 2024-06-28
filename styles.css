@@ -263,6 +263,9 @@ footer {
   .highlight {
     font-size: 25px;
   }
+  .order-button {
+    font-size: 24px;
+  }
 }
 
 /* Media query untuk layar dengan maksimal lebar 600px */
@@ -306,14 +309,6 @@ footer {
     padding: 25px;
   }
 
-  /* .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: auto;
-    margin: 10px 25px;
-  } */
-
   .grid-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -324,29 +319,33 @@ footer {
   .grid-item:nth-child(1) {
     grid-column: span 3;
     grid-row: span 2;
-  } /* Spans 3 columns and 2 rows */
+  }
   .grid-item:nth-child(2) {
     grid-column: span 5;
-  } /* Spans 6 columns */
+  }
   .grid-item:nth-child(3) {
     grid-column: span 5;
     grid-row: span 3;
-  } /* Spans 3 columns and 3 rows */
+  }
   .grid-item:nth-child(4) {
     grid-column: span 3;
     grid-row: span 2;
-  } /* Spans 4 columns */
+  }
   .grid-item:nth-child(5) {
     grid-column: span 6;
     grid-row: span 2;
-  } /* Spans 4 columns and 2 rows */
+  }
   .grid-item:nth-child(6) {
     grid-column: span 2;
-  } /* Spans 2 columns and 2 rows */
+  }
   .grid-item:nth-child(7) {
     grid-column: span 3;
-  } /* Spans 3 columns */
+  }
   .grid-item:nth-child(8) {
     grid-column: span 5;
-  } /* Spans 5 columns and 2 rows */
+  }
+
+  .order-button {
+    font-size: 20px;
+  }
 }
