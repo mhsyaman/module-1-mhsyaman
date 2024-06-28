@@ -67,7 +67,7 @@ nav ul li a:hover {
   top: 0;
   right: 0;
   background-color: #f9f9f9;
-  width: 70%;
+  width: 75%;
   height: 100vh;
   transition: transform 0.5s ease;
 }
@@ -77,10 +77,15 @@ nav ul li a:hover {
 
 .nav-list.active {
   display: block;
-  transform: translateX(40%) translateY(6%);
+  cursor: pointer;
+  fill: white;
+  transform: translateX(40%);
   background-color: #333;
   color: #f9f9f9;
-  padding: 4px 5px;
+  padding: 20px 5px;
+}
+.nav-list.active .close-menu {
+  right: 100px;
 }
 
 .nav-list li a {
@@ -101,9 +106,6 @@ nav ul li a:hover {
   nav ul li a {
     padding: 10px 15px;
   }
-  /* .hamburger-menu {
-    display: none;
-  } */
 }
 
 @media (max-width: 600px) {
