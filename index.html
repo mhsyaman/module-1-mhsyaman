@@ -22,6 +22,7 @@
         <nav>
             <i data-feather="menu" class="hamburger-menu"></i>
             <ul class="nav-list">
+                <li><i data-feather="x" class="close-menu"></i></li>
                 <li><a href="#home">Beranda</a></li>
                 <li><a href="#products">Produk</a></li>
                 <li><a href="#form">Kontak</a></li>
@@ -105,6 +106,7 @@
             const hamburgerMenu = document.querySelector('.hamburger-menu');
             const navList = document.querySelector('.nav-list');
             const promo = document.querySelector('.promo');
+            const closeMenu = document.querySelector('.close-menu');
 
             hamburgerMenu.addEventListener('click', function () {
                 this.classList.toggle('active');
@@ -112,14 +114,18 @@
                 promo.classList.toggle('active');
             });
 
-            document.addEventListener('DOMContentLoaded', function () {
-                const hamburgerMenu = document.querySelector('.hamburger-menu');
-                const header = document.querySelector('header');
+            closeMenu.addEventListener('click', function () {
+                navList.classList.remove('active');
+            })
 
-                hamburgerMenu.addEventListener('click', function () {
-                    header.classList.toggle('sticky');
-                });
-            });
+            // document.addEventListener('DOMContentLoaded', function () {
+            //     const hamburgerMenu = document.querySelector('.hamburger-menu');
+            //     const header = document.querySelector('header');
+
+            //     hamburgerMenu.addEventListener('click', function () {
+            //         header.classList.toggle('sticky');
+            //     });
+            // });
         });
     </script>
 </body>
