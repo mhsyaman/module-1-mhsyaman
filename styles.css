@@ -1,3 +1,9 @@
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -27,86 +33,83 @@ aside p {
   text-align: center;
 }
 
-/* Styling untuk section produk */
-#products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: #f4f4f4;
-}
-
-.product-item {
-  width: 30%;
-  margin: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  background-color: white;
-  text-align: center; /* Tengahkan semua teks */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk efek hover */
-  border-radius: 8px; /* Border radius untuk tampilan yang lebih lembut */
-  display: flex; /* Added to enable flex-direction */
-  flex-direction: column; /* Mengatur item produk secara vertikal */
-}
-
-.product-item:hover {
-  transform: translateY(-5px); /* Efek hover yang mengangkat item */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih dinamis saat hover */
-}
-
-.product-item img {
-  width: 100%; /* Buat gambar memenuhi lebar kontainer */
-  height: auto; /* Pertahankan rasio aspek gambar */
-  border-radius: 5px; /* Lengkungan pada gambar */
-}
-
-.product-item h4 {
-  color: #333;
-  margin-top: 10px;
-}
-
-/* Animasi untuk memuat item produk */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.product-item {
-  animation: fadeInUp 0.5s ease-out forwards;
-}
-
-#products h3 {
-  font-size: 24px; /* Ukuran font diperbesar */
-  font-weight: bold; /* Membuat teks lebih tebal */
-  color: #333; /* Warna teks disesuaikan */
-  margin-bottom: 10px; /* Memberikan jarak di bawah teks */
-  text-align: center; /* Teks rata tengah untuk keselarasan */
-}
-
 #home {
-  background-color: #f0f8ff; /* Warna latar belakang biru muda */
-  padding: 20px; /* Padding untuk membuat teks tidak terlalu dekat dengan tepi */
-  border-radius: 8px; /* Tepi yang melengkung */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan untuk menambah kedalaman */
-  margin: 20px; /* Margin untuk memberi ruang sekitar section */
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-background {
+  background-image: url("assets/backgrounds/home-bg.webp");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  filter: brightness(110%) contrast(120%);
 }
 
 #home h2 {
-  color: #333; /* Warna teks gelap untuk judul */
-  font-size: 24px; /* Ukuran font yang lebih besar untuk judul */
-  margin-bottom: 10px; /* Jarak antara judul dan paragraf */
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-#home p {
-  color: #666; /* Warna teks abu-abu untuk paragraf */
-  font-size: 16px; /* Ukuran font untuk paragraf */
-  line-height: 1.6; /* Jarak antar baris */
+#home h3 {
+  color: white;
+  font-size: 1.5em;
+  text-shadow: 2px 2px 4px black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  margin: 10px 25px;
+}
+
+.grid-item:nth-child(1) {
+  grid-row-end: span 2; /* Grid pertama tingginya 2 row */
+}
+
+.grid-item:nth-child(2) {
+  grid-row-end: span 1; /* Grid kedua tingginya 1 row */
+}
+
+.grid-item:nth-child(3) {
+  grid-row-end: span 1; /* Grid ketiga tingginya 3 row */
+}
+
+.grid-item:nth-child(4) {
+  grid-row-end: span 2; /* Grid pertama tingginya 2 row */
+}
+
+.grid-item:nth-child(5) {
+  grid-row-end: span 1; /* Grid kedua tingginya 1 row */
+}
+
+.grid-item:nth-child(6) {
+  grid-row-end: span 3; /* Grid ketiga tingginya 3 row */
+}
+
+.grid-item:nth-child(7) {
+  grid-row-end: span 2; /* Grid pertama tingginya 2 row */
+}
+
+.grid-item:nth-child(8) {
+  grid-row-end: span 1; /* Grid kedua tingginya 1 row */
+}
+
+.grid-item img {
+  width: 100%;
 }
 
 /* Styling untuk section form */
@@ -182,7 +185,6 @@ footer {
   text-align: center; /* Teks rata tengah */
   position: relative; /* Posisi relatif */
   bottom: 0; /* Letakkan di bawah halaman */
-  width: 100%; /* Lebar penuh */
 }
 
 /* Styling untuk promo hari ini */
@@ -200,6 +202,10 @@ footer {
 .promo:hover {
   transform: scale(1.05); /* Efek hover yang memperbesar promo */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Bayangan yang lebih dinamis saat hover */
+}
+
+.promo.active {
+  display: none;
 }
 
 /* Media query untuk layar dengan maksimal lebar 800px */
@@ -250,5 +256,20 @@ footer {
     flex-direction: column; /* Mengatur item produk secara vertikal */
     width: 100%; /* Mengatur lebar setiap item produk menjadi penuh */
     margin-bottom: 20px; /* Menambahkan jarak di bawah setiap item produk */
+  }
+  .responsive-background {
+    background-image: url("assets/backgrounds/mobile-bg.jpg");
+  }
+
+  #home {
+    padding: 25px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    margin: 10px 25px;
   }
 }
