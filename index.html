@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adelas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles/header.css">
     <script src="https://unpkg.com/feather-icons"></script>
@@ -35,25 +40,22 @@
         <p>Dapatkan diskon hingga <span class="highlight">50%</span> <br> untuk merek tertentu!</p>
     </aside>
     <main>
-        <section id="home">
-            <h2>Selamat Datang di Toko Sepatu Kami</h2>
-            <p>Kami menyediakan berbagai macam sepatu berkualitas tinggi.</p>
+        <section id="home" class="responsive-background">
+            <h2>Langkahkan Setiap Tantangan dengan Sepatu Adelas yang Tepat</h2>
+            <h3>Temukan Sepatu Olahraga yang Sesuai dengan Gaya Anda</h3>
         </section>
-        <section id="products">
-            <h3>Produk Kami</h3>
-            <div class="product-item">
-                <img src="assets/sneaker-shoes.jpg" alt="Sneakers Keren">
-                <h4>Sneakers Keren</h4>
-                <p>Harga: Rp220.000</p>
-            </div>
-            <div class="product-item">
-                <img src="assets/formal-shoes.jpg" alt="Sepatu Formal Elegan">
-                <h4>Sepatu Formal Elegan</h4>
-                <p>Harga: Rp245.000</p>
-            </div>
-            <!-- Tambahkan lebih banyak produk sesuai dengan kebutuhan -->
+        <!-- assymetrical grid -->
+        <section class="grid-container">
+            <div class="grid-item"><img src="assets/asymetrical-grid/content-1.jpg" /> </div>
+            <div class="grid-item"><img src="assets/asymetrical-grid/content-2.jpg" /></div>
+            <div class="grid-item"><img src="assets/asymetrical-grid/content-3.jpg" /></div>
+            <div class="grid-item"><img src="assets/asymetrical-grid/content-4.jpg" /></div>
+            <div class="grid-item"><img src="assets/asymetrical-grid/content-5.jpg" /></div>
+            <div class="grid-item"><img src="assets/asymetrical-grid/content-6.jpg" /></div>
+            <div class="grid-item"><img src="assets/asymetrical-grid/content-7.jpg" /></div>
+            <div class="grid-item"><img src="assets/asymetrical-grid/content-8.jpg" /></div>
         </section>
-        <section id="form">
+        <section id=" form">
             <h3>Formulir Kontak</h3>
             <form>
                 <label for="name">Nama:</label>
@@ -98,6 +100,27 @@
 
     <script>
         feather.replace();
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const navList = document.querySelector('.nav-list');
+            const promo = document.querySelector('.promo');
+
+            hamburgerMenu.addEventListener('click', function () {
+                this.classList.toggle('active');
+                navList.classList.toggle('active');
+                promo.classList.toggle('active');
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const hamburgerMenu = document.querySelector('.hamburger-menu');
+                const header = document.querySelector('header');
+
+                hamburgerMenu.addEventListener('click', function () {
+                    header.classList.toggle('sticky');
+                });
+            });
+        });
     </script>
 </body>
 
