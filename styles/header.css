@@ -13,6 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* width: 100%; */
 }
 
 header h1 {
@@ -63,11 +64,23 @@ nav ul li a:hover {
 .nav-list {
   display: none;
   position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f9f9f9;
+  width: 70%;
+  height: 100vh;
+  transition: transform 0.5s ease;
+}
+.nav-list:hover {
+  background-color: #555;
+}
+
+.nav-list.active {
+  display: block;
+  transform: translateX(40%) translateY(6%);
   background-color: #333;
-  width: 100%;
-  top: 60px;
-  left: 0;
-  border-top: 1px solid #555;
+  color: #f9f9f9;
+  padding: 4px 5px;
 }
 
 .nav-list li a {
@@ -96,6 +109,7 @@ nav ul li a:hover {
 @media (max-width: 600px) {
   header {
     display: block;
+    position: sticky;
   }
 
   header h1 {
@@ -105,12 +119,19 @@ nav ul li a:hover {
   nav ul li a {
     display: none;
   }
+
   .hamburger-menu {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .nav-list {
-    display: block;
+  .hamburger-menu.active + .nav-list {
+    transition: left 0.5s ease;
+    padding: 0;
+    width: 75vw;
+  }
+
+  .nav-list li a {
+    padding: 10px 5px;
   }
 }
