@@ -47,3 +47,10 @@ HTML5 is used for the basic structure.
 #### Overview
 
 This site is designed to provide easily accessible information about the products and services of the Shoe Store, as well as facilitate communication between visitors and the store owner through the contact form.
+
+---
+
+### Deployment Process
+
+| Deployment process to Netlify
+
