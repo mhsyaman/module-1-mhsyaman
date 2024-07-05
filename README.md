@@ -122,4 +122,39 @@ This is step by step how to domain registration with Niagahoster :
    
    ![Screenshot 2024-07-04 223209](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/9a33cbf9-8222-42bc-8fa7-824c68e0a1d6)
 
-5. 
+5. Verify your email address on your domain purchase
+
+   ![Screenshot 2024-07-04 224911](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/53f4562b-d176-494d-99e8-f30f34263657)
+
+6. Waiting for pending verification to become active
+
+   ![Screenshot 2024-07-04 225725](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/2a6cdddd-f83b-40e7-b37a-26f35a431a7a)
+
+   ![Screenshot 2024-07-04 225755](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/2ea50068-89e6-425c-9d0b-abd8c0f5f0f9)
+
+---
+
+### DNS Management
+
+| DNS Management between Netlify and Niagahoster
+
+This is step by step how to DNS management between Netlify and Niagahoster :
+
+1. Make sure you have completed the previous 2 steps
+2. Go to the Netlify Domain Management page
+
+   ![Screenshot 2024-07-04 230256](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/25099a77-4c2c-47a3-a6e2-3d2fc519c9d5)
+
+3. Click "Add a domain" to add a new domain
+
+   ![Screenshot 2024-07-04 230256](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/4d47c33f-02d6-4c9f-b751-956d51a3fdf9)
+  
+5. Configure the domain according to what you created in Niagahoster
+
+   ![Screenshot 2024-07-04 230337](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/0c98e280-6eef-43ca-9f04-e8ce48f5e23e)
+
+6. Click "Options" to set up Netlify DNS
+
+   ![Screenshot 2024-07-04 230738](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/e15c737b-6c29-4abb-9b9f-8885f672a56f)
+
+7. 
