@@ -157,4 +157,20 @@ This is step by step how to DNS management between Netlify and Niagahoster :
 
    ![Screenshot 2024-07-04 230738](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/e15c737b-6c29-4abb-9b9f-8885f672a56f)
 
-7. 
+7. Copy all name servers that will be inserted in Niagahoster Nameservers
+
+   ![Screenshot 2024-07-05 090134](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/20eb18fd-ae77-4264-9314-22772f41ea03)
+
+8. Switch to Niagahoster DNS / Nameservers
+
+   ![Screenshot 2024-07-05 091457](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/cdc28b4c-52be-4f09-bc4d-378865d30b4e)
+
+9. Click "Change Nameservers" to configure nameservers
+
+   ![Screenshot 2024-07-05 092149](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/a50beb73-699c-4bd5-839c-f3a0f95079be)
+
+10. Select change nameservers to configure Niagahoster nameservers with Netlify
+
+    ![Screenshot 2024-07-05 092823](https://github.com/revou-fsse-5/module-1-mhsyaman/assets/98678219/dcbdfac5-28e8-4707-be43-4b38a681a99d)
+
+11. 
